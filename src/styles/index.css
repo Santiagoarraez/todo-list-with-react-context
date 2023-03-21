@@ -1,12 +1,26 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.cardpage {
+  width: 35%;
+}
+.paperBackground {
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-papel-blanco-arte_35956-2379.jpg);
+}
+.transparentBackground {
+  background-color: transparent;
+}
+.borderNone {
+  border: none;
+}
+.todotitle {
+  font-size: 4vmax;
+  color: rgba(255, 160, 122, 0.597);
+}
+.borderinput:focus {
+  outline: 0px;
+}
+.buttonHover {
+  color: rgba(125, 125, 127, 0.264);
+  transition: color 0.5s;
+}
+.buttonHover:hover {
+  color: red;
+}
