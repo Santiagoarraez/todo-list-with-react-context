@@ -16,7 +16,7 @@ const Home = () => {
 			console.log(event)
 		}
 	}
-	const deleteTask = (id) => {
+	const handleDeleteTask = (id) => {
 		let NewTodoList = todoList.filter((item, index) => index != id);
 		setTodoList(NewTodoList);
 	}
@@ -36,7 +36,7 @@ const Home = () => {
 							{todoList.map((task, index) => {
 								return (
 									<li className="list-group-item transparentBackground d-flex justify-content-between fs-4" key={`${task}-${index}`}>
-										{task}<button type="button" className="transparentBackground borderNone buttonHover fs-4" onClick={() => deleteTask(index)}><i className="fas fa-times buttonHover"></i></button>
+										{task}<button type="button" className="transparentBackground borderNone buttonHover fs-4" onClick={() => handleDeleteTask(index)}><i className="fas fa-times buttonHover"></i></button>
 									</li>
 								);
 							})}
@@ -44,7 +44,6 @@ const Home = () => {
 					</div>
 					<div className="card-footer fs-5 fw-bolder">{todoList.length} pending tasks</div>
 				</div>
-
 			</div>
 		</div>
 	);
